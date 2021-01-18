@@ -36,6 +36,9 @@ listaStudenti.push({
 });
 console.log(listaStudenti);
 
-if (isNaN(nome) && isNaN(cognome)) {
+if (parseInt(nome) || parseInt(cognome)) {
 alert('non puoi inserire dei numeri');
+}
+if (isNaN(età)) {
+  alert('devi inserire dei numeri');
 }
